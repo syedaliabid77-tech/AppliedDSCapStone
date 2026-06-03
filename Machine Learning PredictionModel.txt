@@ -1,0 +1,11 @@
+ Complete the Machine Learning Prediction lab
+Conclusion & Observations
+When you run this on the SpaceX dataset, you will likely notice a very specific trend:
+
+The Tie: Logistic Regression, SVM, and KNN usually yield the exact same validation score (~0.8482) and test score (~0.8333). This happens because the dataset is relatively small, and their respective hyperparameter grids allowed them to find identical optimal decision boundaries for the test samples.
+
+The Decision Tree Wildcard: The Decision Tree accuracy can fluctuate slightly depending on the exact random split and tree depth configuration. It sometimes ties with the other three or scores slightly lower due to a tendency to overfit small datasets.
+
+Summary Conclusion:
+
+Since Logistic Regression, SVM, and KNN all perform equally well with the highest accuracy on both the validation and test datasets, they are collectively the best performing methods. In a real-world setting, Logistic Regression might be preferred here because it is computationally lighter and highly interpretable.
